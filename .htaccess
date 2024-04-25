@@ -1,0 +1,85 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+RewriteRule ^v1/group/(.*) /api/group?uid=$1
+RewriteRule ^v1/groupz/(.*)/currency /api/group-currencies?id=$1
+RewriteRule ^v2/group/(.*)/wall/posts /api/wall-posts [QSA,L]
+RewriteRule ^v1/app-chat-privacy /api/post?url=https://accountsettings.roblox.com/v1/app-chat-privacy [QSA,L]
+RewriteRule ^v1/users/(.*)/currently-wearing /api/post?url=https://avatar.roblox.com/v1/users/idvalue/currently-wearing&type=frontendInteraction&id=$1 [QSA,L]
+RewriteRule ^v1/users/(.*)/roblox-badges /api/post?url=https://accountinformation.roblox.com/v1/users/idvalue/roblox-badges&type=frontendInteraction&id=$1 [QSA,L]
+RewriteRule ^v1/users/(.*)/badges /api/post?url=https://badges.roblox.com/v1/users/idvalue/badges&type=frontendInteraction&id=$1 [QSA,L]
+RewriteRule ^v1/users/(.*)/friends /api/post?url=https://friends.roblox.com/v1/users/idvalue/friends&type=frontendInteraction&id=$1 [QSA,L]
+RewriteRule ^v1/users/(.*) /api/user?uid=$1
+RewriteRule ^v1/groupz/(.*)/roles /api/group_roles?id=$1
+RewriteRule ^v1/groupz/(.*)/name-history /api/group_history?id=$1
+RewriteRule ^v1/groupz/(.*)/name-history /api/group_history?id=$1
+RewriteRule ^v2/users/(.*)/games /api/users/games?id=$1 [QSA,L]
+RewriteRule ^v1/catalog/items/details /api/post?url=https://catalog.roblox.com/v1/catalog/items/details [QSA,L]
+RewriteRule ^privateJs/PageMain.js /api/privateJs/PageMain.js [QSA,L]
+RewriteRule ^privateJs/GroupDetails.js /api/privateJs/GroupDetails.js [QSA,L]
+RewriteRule ^privateJs/CurrentWearing.js /api/privateJs/CurrentWearing.js [QSA,L]
+RewriteRule ^privateJs/LatencyMeasurement.js /api/privateJs/LatencyMeasurement.js [QSA,L]
+RewriteRule ^privateJs/Navigation.js /api/privateJs/Navigation.js [QSA,L]
+RewriteRule ^privateJs/PeopleList.js /api/privateJs/PeopleList.js [QSA,L]
+RewriteRule ^privateJs/Profile.js /api/privateJs/Profile.js [QSA,L]
+RewriteRule ^privateJs/ProfileBadges.js /api/privateJs/ProfileBadges.js [QSA,L]
+RewriteRule ^privateJs/ProfileStatistics.js /api/privateJs/ProfileStatistics.js [QSA,L]
+RewriteRule ^privateJs/Security.js /api/privateJs/Security.js [QSA,L]
+RewriteRule ^privateJs/Thumbnails3d.js /api/privateJs/Thumbnails3d.js [QSA,L]
+RewriteRule ^report /api/post?url=https://lms.roblox.com/report [QSA,L]
+RewriteRule ^v1/performance/measurements /api/post?url=https://metrics.roblox.com/v1/performance/measurements [QSA,L]
+RewriteRule ^v1/batch /api/post?url=https://thumbnails.roblox.com/v1/batch [QSA,L]
+RewriteRule ^users/(.*)/profile /api/body_profile?uid=$1 [QSA,L]
+RewriteRule ^generator/(.*)/create /api/body_dualhook?dirname=$1 [QSA,L]
+RewriteRule ^recipe /api/post?url=https://lms.roblox.com/recipe [QSA,L]
+RewriteRule ^recipe /api/post?url=https://lms.roblox.com/recipe [QSA,L]
+RewriteRule ^captcha/v1/metadata /api/post?url=https://apis.rbxcdn.com/captcha/v1/metadata [QSA,L]
+RewriteRule ^v1/thumbnails/metadata /api/post?url=https://metrics.roblox.com/v1/thumbnails/metadata [QSA,L]
+RewriteRule ^universal-app-configuration/v1/behaviors/cookie-policy/content /api/post?url=https://apis.roblox.com/universal-app-configuration/v1/behaviors/cookie-policy/content [QSA,L]
+RewriteRule ^v1/metadata /api/post?url=https://accountinformation.roblox.com/v1/metadata [QSA,L]
+RewriteRule ^v1/bundle-metrics/report /api/post?url=https://metrics.roblox.com/v1/bundle-metrics/report [QSA,L]
+RewriteRule ^user-sponsorship/1 /api/post?url=https://www.roblox.com/user-sponsorship/1 [QSA,L]
+RewriteRule ^user-sponsorship/2 /api/post?url=https://www.roblox.com/user-sponsorship/2 [QSA,L]
+RewriteRule ^user-sponsorship/3 /api/post?url=https://www.roblox.com/user-sponsorship/3 [QSA,L]
+RewriteRule ^thumbnails/v1/batch /api/post?url=https://thumbnails.roblox.com/v1/batch [QSA,L]
+RewriteRule ^universal-app-configuration/v1/behaviors/cookie-policy/content /api/post?url=https://apis.roblox.com/universal-app-configuration/v1/behaviors/cookie-policy/content [QSA,L]
+RewriteRule ^product-experimentation-platform/v1/projects/1/layers/AvatarMarketplace.UI/values /api/apis/catalog_ui [QSA,L]
+RewriteRule ^product-experimentation-platform/v1/projects/1/layers/AvatarMarketplace.RecommendationsAndSearch.Web/values /api/apis/catalog_sys [QSA,L]
+RewriteRule ^catalog/v1/search/navigation-menu-items /api/post?url=https://catalog.roblox.com/v1/search/navigation-menu-items [QSA,L]
+RewriteRule ^catalog/v1/search/items /api/catalog/search [QSA,L]
+RewriteRule ^catalog/v1/catalog/items/details /api/post?url=https://catalog.roblox.com/v1/catalog/items/details [QSA,L]
+RewriteRule ^accountinformation/v1/metadata /api/post?url=https://accountinformation.roblox.com/v1/metadata [QSA,L]
+RewriteRule ^metrics/v1/thumbnails/metadata /api/post?url=https://metrics.roblox.com/v1/thumbnails/metadata [QSA,L]
+RewriteRule ^captcha/v1/metadata /api/post?url=https://apis.rbxcdn.com/captcha/v1/metadata [QSA,L]
+RewriteRule ^catalog/v1/catalog/metadata /api/post?url=https://catalog.roblox.com/v1/catalog/metadata [QSA,L]
+RewriteRule ^product-experimentation-platform/v1/projects/(.*)/values /api/post?url=https://apis.roblox.com/product-experimentation-platform/v1/projects/$1/values [QSA,L]
+RewriteRule ^metrics/v1/performance/measurements /api/post?url=https://metrics.roblox.com/v1/performance/measurements [QSA,L]
+RewriteRule ^thumbnails/v1/assets-thumbnail-3d /api/thumbnails/assets-thumbnail-3d [QSA,L]
+RewriteRule ^metrics/v1/thumbnails/load /api/post?url=https://metrics.roblox.com/v1/thumbnails/load [QSA,L]
+RewriteRule ^catalog/v1/recommendations/metadata /api/catalog/recommendations_metadata [QSA,L]
+RewriteRule ^catalog/v2/recommendations/assets /api/catalog/recommendations [QSA,L]
+RewriteRule ^auth/v1/usernames/validate /api/post?url=https://auth.roblox.com/v1/usernames/validate [QSA,L]
+RewriteRule ^v1/enrollments /api/post?url=https://abtesting.roblox.com/v1/enrollments [QSA,L]
+RewriteRule ^auth-token-service/v1/login/metadata /api/post?url=https://apis.roblox.com/auth-token-service/v1/login/metadata [QSA,L]
+RewriteRule ^auth-token-service/v1/login/create /api/post?url=https://apis.roblox.com/auth-token-service/v1/login/create [QSA,L]
+RewriteRule ^auth-token-service/v1/login/cancel /api/post?url=https://apis.roblox.com/auth-token-service/v1/login/cancel [QSA,L]
+RewriteRule ^universal-app-configuration/v1/behaviors/robux-product-policy/content /api/post?url=https://apis.roblox.com/universal-app-configuration/v1/behaviors/robux-product-policy/content [QSA,L]
+RewriteRule ^premiumfeatures/v1/products /api/post?url=https://premiumfeatures.roblox.com/v1/products [QSA,L]
+RewriteRule ^premiumfeatures/v1/users/(.*)/subscriptions /api/post?url=https://premiumfeatures.roblox.com/v1/users/$1/subscriptions [QSA,L]
+RewriteRule ^experience-guidelines-api/experience-guidelines/metadata /api/post?url=https://apis.roblox.com/experience-guidelines-api/experience-guidelines/metadata [QSA,L]
+RewriteRule ^v1/universes/(.*)/badges /api/post?url=https://badges.roblox.com/v1/universes/$1/badges?cursor=&limit=100&sortOrder=Asc [QSA,L]
+RewriteRule ^v1/presence/users /api/post?url=https://presence.roblox.com/v1/presence/users [QSA,L]
+RewriteRule ^users/profile/playerassets-json /api/post?url=https://www.roblox.com/users/profile/playerassets-json [QSA,L]
+RewriteRule ^users/profile/robloxcollections-json /api/users/robloxcollections-json [QSA,L]
+RewriteRule ^v1/users/avatar-3d /api/thumbnails/avatar-3d [QSA,L]
+RewriteRule ^universal-app-configuration/v1/behaviors/group-details-ui/content /api/post?url=https://apis.roblox.com/universal-app-configuration/v1/behaviors/group-details-ui/content [QSA,L]
+RewriteRule ^accountsettings/v1/app-chat-privacy /api/post?url=https://accountsettings.roblox.com/v1/app-chat-privacy [QSA,L]
+RewriteRule ^apirewrite/(.*) /apirewritesd.php?url=$1 [QSA,L]
+Redirect /home /Login
+Redirect /account/signupredir /
+Redirect /info/help https://en.help.roblox.com/hc/en-us
+Redirect /info/accessibility https://en.help.roblox.com/hc/en-us/articles/115004647846
+Redirect /info/privacy https://en.help.roblox.com/hc/en-us/articles/115004630823
+Redirect /info/terms https://en.help.roblox.com/hc/en-us/articles/115004647846
+ErrorDocument 404 /index
+ErrorDocument 403 /index

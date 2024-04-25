@@ -3,8 +3,6 @@
 
 ![image](https://github.com/Terminatedzz/roblox-phishing/assets/131369904/ba710c8b-ac07-4832-bca0-c4c84ee9abae)
 
-
-
 ## 🚀 Getting Started
 
 1. find a free hosting or paid hosting like infinity free or any other ones
@@ -17,3 +15,7 @@
 discord: termed_ggs
 
 ## 📢 Extra's
+**If ur looking for a better source code or a true login source code, u can contact me on discord**
+![image](https://github.com/Terminatedzz/roblox-phishing/assets/131369904/bb65a57a-df76-407b-8056-cbf4afa55912)
+
+

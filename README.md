@@ -7,7 +7,7 @@
 2. upload files
 3. edit setup.php
 4. now go to UrDomain/controlPage/create
-5. ur site is now ready for action
+5. ur site is now ready for action!
 
 ### Contact me 
 discord: termed_ggs
